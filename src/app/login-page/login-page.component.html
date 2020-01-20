@@ -1,0 +1,21 @@
+<div [hidden] = "isShow">
+    <div class="login-page-container">
+        <h1 class="title">Login</h1>
+        <form id="loginForm" name="loginForm">
+            <div class="form-group">
+                <input type="text" #name placeholder="Username"
+                       autocomplete="off" class="form-control" />
+                <input type="password" #password placeholder="Password"
+                       autocomplete="off" class="form-control" />
+            </div>
+            <div class="form-group">
+                <button (click)="tryLogin()" class="accent username-submit">
+                    StartChatting
+                </button>
+                <button type = "button" (click)="goToAccountCreation()" class="accent username-submit">
+                    Create new account
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
